@@ -1,4 +1,4 @@
-#!/usr/bin/env gjs
+#!/usr/bin/env -S gjs -m
 // Copyright (C) 2017 Tomasz Miąsko
 // 
 // This program is free software: you can redistribute it and/or modify
@@ -11,11 +11,9 @@
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
 
-'use strict';
+import Gio from 'gi://Gio';
 
-const Gio = imports.gi.Gio;
-
-const { Writer, checkFeatures } = imports.arbtt;
+import { Writer, checkFeatures } from '../arbtt.js';
 
 function throwsMessage(fun, expected) {
     let e = null;

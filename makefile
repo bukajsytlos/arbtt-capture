@@ -3,10 +3,10 @@
 all: schemas
 
 schemas:
-	glib-compile-schemas .
+	glib-compile-schemas schemas
 
 check:
-	gjs -I . test/testArbtt.js
+	gjs -m test/testArbtt.js
 
 clean:
 

@@ -15,6 +15,8 @@ data.*
 
 ## Installation and usage
 
+Requires GNOME Shell 45 or later.
+
  1. [Install arbtt][arbtt-installation]. Its arbtt-import application
     should support at least `--append` flag and `--format=JSON`.
  2. Clone git repository into GNOME shell extension directory:
@@ -22,9 +24,10 @@ data.*
     mkdir -p ~/.local/share/gnome-shell/extensions
     git clone https://github.com/tmiasko/arbtt-capture ~/.local/share/gnome-shell/extensions/arbtt-capture@tmiasko.github.com
     ```
- 3. Restart gnome-shell.
+ 3. Log out and log back in (required on Wayland to pick up new extensions).
  4. Disable original arbtt-capture, if you have used it before.
- 5. Configure and enable extension using gnome-tweak-tool.
+ 5. Enable the extension with `gnome-extensions enable arbtt-capture@tmiasko.github.com`
+    and configure it with `gnome-extensions prefs arbtt-capture@tmiasko.github.com`.
 
 To process the logs use arbtt-stats from original [arbtt][arbtt] software
 package. See [user guide][arbtt-user-guide] for details.

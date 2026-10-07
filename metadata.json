@@ -3,5 +3,5 @@
   "name": "arbtt-capture",
   "description": "Records which windows are open, which one has focus and time since your last action in format compatible with arbtt.",
   "settings-schema": "org.gnome.shell.extensions.arbtt-capture",
-  "shell-version": ["3.26.2"]
+  "shell-version": ["45", "46"]
 }
